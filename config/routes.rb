@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  get 'pages/home'
-  get 'pages/terms'
-  get 'pages/privacy'
+  get '/home', to: 'pages#home'
+  get '/legal', to: 'pages#terms'
+  get '/privacy', to: 'pages#privacy'
   root "pages#home"
 end
