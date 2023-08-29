@@ -28,8 +28,11 @@
     <% if user_signed_in? %>
       <li>
         <strong>
-          <%= current_user.email %>
+          <%= current_user.full_name %>
         </strong> |
+        <strong>
+          <%= current_user.role %>
+        </strong>
       </li>
       <li>
         <%= link_to "Editar perfil", edit_user_registration_path %>
